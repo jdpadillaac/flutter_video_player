@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_video/pages/video_payer.dart';
+import 'package:flutter_video/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key key}) : super(key: key);
@@ -7,6 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer: homeDrawer,
       appBar: AppBar(
         title: Text('Listado de video'),
       ),
